@@ -1,0 +1,29 @@
+﻿@model Travel_Agency.Models.Users
+
+@{
+    ViewBag.Title = "Sign up";
+}
+
+<h2>SignUp for Travel Agency</h2>
+
+<div>
+    <form action="SignUp" method="post">
+        <label>user name: </label>
+        <input id="userName" name="userName" type="text" /> @Html.ValidationMessageFor(x => x.userName)<br />
+        <label>first name: </label>
+        <input id="firstName" name="firstName" type="text" /> @Html.ValidationMessageFor(x => x.firstName)<br />
+        <label>last name: </label>
+        <input id="lastName" name="lastName" type="text" /> @Html.ValidationMessageFor(x => x.lastName)<br />
+        <label>id: </label>
+        <input id="id" name="id" type="text" /> @Html.ValidationMessageFor(x => x.id)<br />
+        <label>phone: </label>
+        <input id="phone" name="phone" type="text" /> @Html.ValidationMessageFor(x => x.phone)<br />
+        <label>email: </label>
+        <input id="email" name="email" type="text" /> @Html.ValidationMessageFor(x => x.email)<br />
+        <label>passport: </label>
+        <input id="passport" name="passport" type="text" /> @Html.ValidationMessageFor(x => x.passport)<br />
+        <label>password: </label>
+        <input id="password" name="password" type="password" /> @Html.ValidationMessageFor(x => x.password)<br />
+
+        <input id="signup" type="submit" value="Sign up" /> <br />
+</div>

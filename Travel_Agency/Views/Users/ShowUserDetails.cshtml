@@ -1,0 +1,35 @@
+﻿@model Travel_Agency.Models.Users
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>ShowUserDetails</title>
+</head>
+<body>
+    <div>
+        <h2>Show User Details:</h2>
+        <label>user name: @Model.userName</label>
+        <br />
+        <label>first name: @Model.firstName</label>
+        <br />
+        <label>last name: @Model.lastName</label>
+        <br />
+        <label>id: @Model.id</label>
+        <br />
+        <label>phone: @Model.phone</label>
+        <br />
+        <label>email: @Model.email</label>
+        <br />
+        <label>passport: @Model.passport</label>
+        <br />
+        <label>password: @Model.password</label>
+        <br />
+    </div>
+</body>
+</html>
